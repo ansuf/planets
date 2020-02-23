@@ -1,5 +1,22 @@
 ---
 layout: default
 ---
-<h1>List of Planets in our planets</h1>
-<p>Tes</p>
+<h2>Types of Planet</h2>
+
+<ol>
+{% for planet in site.data.planet-type %}
+    <li><a href="{{site.baseurl}}{{planet.url}}">{{planet.title}}</a></li>
+    {{planet.content | markdownify}}
+{% endfor %}
+</ol>
+
+<h1>Recently Discovery</h1>
+
+<ul>
+    {% for news in site.categories.discovery %}
+    <li>
+        <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
+        <p>{{news.meta}}</p>
+    </li>
+    {% endfor %}
+</ul>

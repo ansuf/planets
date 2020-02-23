@@ -1,0 +1,14 @@
+---
+layout: news
+---
+
+<h1>Discovery List</h1>
+
+<ul>
+    {% for discovery in site.categories.discovery %}
+    <li>
+        <a href="{{site.baseurl}}{{discovery.url}}">{{discovery.title}}</a>
+        <p>{{discovery.meta}}</p>
+    </li>
+    {% endfor %}
+</ul>
