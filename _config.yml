@@ -1,3 +1,9 @@
 markdown: kramdown
 baseurl: /planets
 exclude: ['README.md', 'other-folder']
+permalink: pretty
+
+collections: 
+    comets:
+      output: true
+      permalink: /comets/:path/

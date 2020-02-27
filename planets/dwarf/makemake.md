@@ -1,7 +1,7 @@
 ---
 layout: planet
 title: Makemake
-meta:
+meta: Makemake (minor-planet designation 136472 Makemake) is a likely dwarf planet and perhaps the second largest Kuiper belt object in the classical population
 type: dwarf
 discoverer:  Michael E. Brown
 discovered: March 31, 2005

@@ -1,16 +1,24 @@
 ---
 layout: default
+titleAfter: Stellar astronomical objects from the universe.
+meta: Discover many planets from the universe both inside and outside our Society
 ---
-<h2>Types of Planet</h2>
+
+<h1>Planets of the Universe</h1>
+<p>A planet is an astronomical object orbiting a star or stellar remnant that bla bla</p>
+
+<h2>Types of Planets</h2>
 
 <ol>
-{% for planet in site.data.planet-type %}
-    <li><a href="{{site.baseurl}}{{planet.url}}">{{planet.title}}</a></li>
-    {{planet.content | markdownify}}
-{% endfor %}
+    {% for planet in site.categories.planet-type %}
+        <li>
+            <a href="{{site.baseurl}}/planets/{{planet.folder}}">{{ planet.title }}</a>
+            {{ planet.content }}
+        </li>
+    {% endfor %}
 </ol>
 
-<h1>Recently Discovery</h1>
+<h1>Recently Discovered Planets</h1>
 
 <ul>
     {% for news in site.categories.discovery %}
